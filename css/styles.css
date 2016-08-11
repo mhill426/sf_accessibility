@@ -1,0 +1,546 @@
+.lightskyblue { color: #87CEFA;}/*rgb(135,206,250)*/
+.skyblue { color: #00BFFF;}/*rgb(221,160,221)*/
+.blue {color: #0077DA;}/*rgb(128,0,128)*/
+
+
+/*------------------------------
+  MAIN
+------------------------------*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hide-visually {
+  position: absolute;
+  left: -500px;
+}
+.hide-visually.focusable:active, .hide-visually.focusable:focus {
+  left: 0;
+  z-index: 1000;
+}
+a.skip-to {
+  color: #00294C;
+  padding: 5px 5px;
+}
+
+/* Global Styles */
+html,
+body {
+  width: 100%;
+  margin: 0 0;
+  padding-top: 25px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  font-size: 14px;
+}
+
+.overlay { 
+  z-index: 1;
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  background: rgba(0, 0, 100, .25);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  letter-spacing: 1.2px;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.7em;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.4em;
+  line-height: 1.3;
+}
+
+h6 {
+  font-size: 1em;
+  color: #7F8289;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+ol li{ 
+  font-size: 16px;
+}
+strong {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+}
+error {
+  color: #e74c3c;
+}
+a {
+  color: #0052C2;
+}
+a:hover {
+  color: #13487D;
+}
+.btn-custom {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 3px solid #0077DA;
+  border-radius: 0px;
+  webkit-border-radius: 0px;
+  padding: 10px 40px;
+  background: transparent;
+}
+.btn-custom:hover {
+  color: #fff;
+  background: #0077DA;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-custom2 {
+  color: #0077DA;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 3px solid #0077DA;
+  border-radius: 0px;
+  webkit-border-radius: 0px;
+  padding: 10px 40px;
+  margin: 20px 0;
+  background: transparent;
+}
+.btn-custom2:hover, .btn-custom2:focus {
+  color: #fff;
+  background: #0077DA;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.separator {
+  margin-bottom: 30px;
+  border-top: 3px solid #0077DA!important;
+  width: 50px;
+}
+.navbar {
+  background-color: #0077DA;
+  color: #fff;
+  -moz-box-shadow:    -.5px .5px 6px 0px rgba(0,0,0,.5)
+  -webkit-box-shadow: -.5px .5px 6px 0px rgba(0,0,0,.5);
+  box-shadow:         -.5px .5px 6px 0px rgba(0,0,0,.5); 
+}
+.navbar a{
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar a:hover, .navbar a:focus{
+  border-bottom: 2px solid #fff;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus{
+  background-color: #0077DA;
+  padding-bottom: 13px;
+} 
+.navbar-toggle:hover {
+  background-color: #0077DA!important;
+  color: #fff;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #0077DA;
+  color: #13487D;
+}
+.dropdown-menu {
+  top:40px;
+  background-color: #0077DA;
+  color: #fff;
+}
+.dropdown-menu > li > a{
+  background-color: #0077DA;
+  color: #fff;
+}
+.dropdown-menu > li > a:hover {
+  background-color: #0077DA;
+  color: #13487D;
+  border: none;
+}
+.dropdown-header {
+  color: #66FF99;
+}
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.sidebar.affix {
+  position: static;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    padding-left: 20px;
+  }
+}
+
+/* First level of nav */
+.sidenav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* All levels of nav */
+.sidebar .sidenav > li > a {
+  display: block;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #767676;
+}
+.sidebar .sidenav > li > a:hover,
+.sidebar .sidenav > li > a:focus {
+  padding-left: 19px;
+  color: #0052C2;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 2px solid #0052C2;
+}
+.sidebar .sidenav > .active > a,
+.sidebar .sidenav > .active:hover > a,
+.sidebar .sidenav > .active:focus > a {
+  padding-left: 18px;
+  font-weight: bold;
+  color: #0052C2;
+  background-color: transparent;
+  border-left: 3px solid #0052C2;
+}
+
+/* Nav: second level (shown on .active) */
+.sidebar .sidenav .item-nav {
+  display: none; /* Hide by default, but at >768px, show it */
+  padding-bottom: 10px;
+}
+.sidebar .sidenav .item-nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.sidebar .sidenav .item-nav > li > a:hover,
+.sidebar .sidenav .item-nav > li > a:focus {
+  padding-left: 30px;
+}
+.sidebar .sidenav .item-nav > .active > a,
+.sidebar .sidenav .item-nav > .active:hover > a,
+.sidebar .sidenav .item-nav > .active:focus > a {
+  padding-left: 27px;
+  font-weight: 700;
+  border-left: 3px solid #0052C2;
+}
+
+/* Back to top (hidden on mobile) */
+.back-to-top {
+  display: none;
+  padding: 4px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #999;
+}
+.back-to-top:hover {
+  color: #0052C2;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .back-to-top{
+    display: block;
+  }
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .sidebar.affix,
+  .sidebar.affix-bottom {
+    width: 213px;
+  }
+  .sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 120px; 
+    font-size: 1.1em;
+  }
+  .sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .sidebar.affix-bottom .sidenav,
+  .sidebar.affix .sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sidebar.affix-bottom .sidenav ul,
+  .sidebar.affix .sidenav ul{
+    /*padding-left: 15px;*/
+    list-style: none;
+  }
+  .sidebar.affix-bottom .sidenav li,
+  .sidebar.affix .sidenav li{
+    list-style: none;
+  }
+}  
+@media (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .sidebar.affix-bottom,
+  .sidebar.affix {
+    width: 263px;
+  }
+}
+
+/* HOME */
+#background-image {
+  height: 650px;
+  width: 100%;
+  background: #fefefe center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#separator-image {
+  min-height: 325px;
+  margin-top: 20px;
+  background: #0077DA center center fixed;
+}
+#home{
+  min-height: 600px;
+  background-color: #0077DA;
+  padding-top: 50px;
+}
+.title {
+  color: #fff;
+  font-size: 9em;
+  font-weight: 300;
+}
+.roadmap{
+  color: #fff;
+  margin: 50px 10px;
+}
+.roadmap a{
+  color: #fff;
+}
+.roadmap a:hover{
+  text-decoration: none;
+}
+.roadmap h3{
+  font-weight: 700;
+}
+.roadmap img{
+  width: 125px;
+}
+.roadmap .glyphicon{
+  font-size: .7em;
+}
+#defined {
+  margin: 50px auto;
+}
+.defined{
+  text-align: center;
+}
+
+/* Intro */
+#intro {
+  padding: 50px 0;
+  background-color: #CCE8FF;
+}
+.intro-body{
+
+}
+#stats{
+  height: 250px;
+  background-color: #e6e6e6;
+}
+.stats{
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Category */
+#why,
+#how,
+#resources{
+  padding-top: 50px;
+}
+.category-title h1{
+  color: #0077DA;
+  font-size: 5.6em;
+  font-weight: 300;
+}
+/*.category-title h4{
+  font-weight: 700;
+}*/
+.category-overview{
+  margin-top: 30px;
+/*  font-family: "Century", serif;
+  font-size: 1.1em;*/
+}
+.category-icon{
+  float: right;
+}
+
+/* Personas */
+.ability-icon{
+  margin-top: 25px;
+}
+.ability-content{
+
+}
+.persona-img{
+  padding: 5px 5px;
+}
+.persona-content{
+
+}
+.card{
+  background-color: #f6f6f6;
+  padding-bottom: 10px;
+  border: 1px solid #0077DA;
+}
+
+/* Section */
+section{
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+.section-content div{
+  padding-top: 20px;
+}
+.section-content h2{
+  padding-bottom: 10px;
+  border-bottom: 3px solid #0077DA;
+}
+
+footer {
+  width: 100%;
+  background-color: #26292E;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0px;
+  padding: 20px 0px;
+}
+footer p {
+  color: #fff;
+}
+/*.footer{
+  display: inline-block !important;
+}*/
+.credit a{
+  color: #7F8289;
+}
+.credit a:hover{
+  color: #fefefe;
+}
+
+
+/* 20.Media-Query
+-------------------------------------------------------------- */
+
+/* -------------------- Large screens -------------------- */
+@media only screen and (min-width : 1680px) {
+
+}
+
+/* -------------------- Tablet Landscape -------------------- */
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  
+}
+
+/* -------------------- Smaller than 960px -------------------- */
+@media only screen and (max-width: 959px) {
+  .main{right: 0;}
+  #background-image {height: 600px; background: #0077DA top center no-repeat;}
+  .color-overlay{height: 600px;}
+  .overlay{height: 600px;}
+}
+
+
+/* -------------------- Tablet Portrait Size -------------------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+
+/* -------------------- All Mobile Sizes -------------------- */
+@media only screen and (max-width: 767px) { 
+  .btn-custom { font-size: .8em; background: #0077DA; }
+  .btn-custom2 { font-size: .8em; }
+  .title { font-size: 4em; }
+  .category-title h1{ font-size: 3em; }
+  .category-icon{float: left;}
+  .navbar a:hover, .navbar a:focus{ border: none; color: #13487D; }
+  h1 { font-size: 2.2em; }
+  h2 { font-size: 2em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.3em; font-weight: 400; }
+  h5 { font-size: 1.15em; }
+  h6 { font-size: .8em; color: #7F8289; }
+  p { font-size: 1.1em; line-height: 1.4em; }
+  .footer-links a { font-size: 1em; }
+  /*.ability-icon{ width: 100px; }*/
+}
+
+/* -------------------- Mobile Landscape -------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* -------------------- Mobile Portrait -------------------- */
+@media only screen and (max-width: 479px) {
+  
+}
+
+/* Retina Display Media Query */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+
+  /* Retina-specific stuff here */
+}
+

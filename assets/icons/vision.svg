@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>vision</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vision" stroke="#0082ED" stroke-width="10">
+            <path d="M150,216 C216.826455,216 271,173.150002 271,150.5 C271,129.651891 225.103017,91.6899128 165.687744,85.7818223 C160.55251,85.2711889 155.316294,85 150,85 C83.1735453,85 29,127.847656 29,150.5 C29,173.152344 83.1735453,216 150,216 Z" id="Oval-3"></path>
+            <circle id="Oval-4" cx="150" cy="151" r="30"></circle>
+            <path d="M62,36 L93.75527,74.6212743" id="Line" stroke-linecap="square"></path>
+            <path d="M221,221 L252.75527,259.621274" id="Line" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>San Francisco - Accessibility Guide</title>
+    <meta name="description" content="Using simple principles to create more inclusive experiences">
+    <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, guide, educational, training, checklist, guidelines, user, experience, human-centered" />
+    <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- <a class="sr-only sr-only-focusable" href="#home">Skip to main content</a> -->
+  <a class="skip-to hide-visually focusable" href="#home">Skip to main content</a>   
+  <div class="container alert-bar"></div>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">SF <strong>Accessibility Guide</strong></a>
+      </div> 
+      <div id="navbar-collapse" class="collapse navbar-collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="why.html#why">Overview</a></li>
+              <li><a href="why.html#users">Users</a></li>
+              <li><a href="why.html#devices">Devices</a></li>
+              <li><a href="why.html#law">Law</a></li>
+              <li><a href="why.html#standards">Standards</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="how.html#how">Overview</a></li>
+              <li><a href="how.html#keyboard">Keyboard</a></li>
+              <li><a href="how.html#images">Images</a></li>
+              <li><a href="how.html#contrast">Color Contrast</a></li>
+              <li><a href="how.html#forms">Forms</a></li>
+              <li><a href="how.html#tables">Tables</a></li>
+              <li><a href="how.html#repeat-links">Repetitive Links</a></li>
+              <li><a href="how.html#motion">Animations & Motion</a></li>
+              <li><a href="how.html#titles">Page Titles</a></li>
+              <li><a href="how.html#headings">Headings</a></li>
+              <li><a href="how.html#landmarks">Landmarks</a></li>
+              <li><a href="how.html#multimedia">Multimedia</a></li>
+              <li><a href="how.html#timeouts">Time Outs</a></li>
+              <li><a href="how.html#text">Text Properties</a></li>
+              <li><a href="how.html#CSS">CSS Dependence</a></li>
+              <li><a href="how.html#frames">Frames</a></li>
+              <li><a href="how.html#plugins">Plug-ins</a></li>
+              <li><a href="how.html#alt-versions">Alternate Versions</a></li>
+            </ul>
+          </li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
+
+<!-- Header -->
+    <div id="home">
+      <div class="container">
+        <h1 class="title">Access <br/>for All.</h1>
+        <h5>Using simple principles to create more inclusive experiences.</h5>
+        <div class="row">
+            <div class="col-xs-5 col-sm-4 col-md-3 roadmap">
+              <a href="why.html"><img src="assets/icons/why-icon.svg">
+              <h3>Why <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></h3>
+              <p>Remove barriers and rethink the interaction.</p></a>
+            </div>
+            <div class="col-xs-5 col-sm-4 col-md-3 roadmap">
+              <a href="how.html"><img src="assets/icons/how-icon.svg">
+              <h3>How <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></h3>
+              <p>Focus on people and build in empathy.</p></a>
+            </div>
+        </div>    
+      </div>
+    </div>
+<!-- Header End -->
+<!-- Defined -->
+    <div id="defined" class="container">
+      <div class="defined col-xs-12">
+        <h5>“Web accessibility refers to the inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed and edited, all users have equal access to information and functionality.”</h5><h6>Source: Wikipedia</h6> 
+      </div>
+    </div>
+<!-- Defined End -->
+
+<!-- Stats -->
+    <!-- <div id="stats">
+      <div class="container">
+        <h3 class="stats"><span data-typer-targets="8% of men are color blind, 1 out of 12 men are color blind,More than 280 thousand men in the SF Bay Area are color blind,More than 11 million men in the United States are color blind"></span></h3>
+      </div>  
+    </div> -->
+
+<!-- About -->
+    <div id="intro">
+      <div class="container">
+        <div class="intro-body col-xs-12 col-md-8">
+          <p>This is a guide on how to think, design, build, and test digital products with all of our users in mind. Though it was originally created for San Francisco, City & County departments and vendors, we realized it has the opportunity to bring awareness to an issue throughout the tech industry in which an a group of <s>users</s> people are not included in the process of designing, developing, or testing.</p>
+          <p>We believe our diversity in backgrounds and experiences allows us to come together to think and create products that none of us could do single-handed, so why would we release a product that any person could NOT use?</p>
+        </div>
+        <div class="col-md-4">
+        <a class="btn-custom2 pull-right" href="/#why">Learn why this matters</a>
+        </div> 
+      </div> 
+    </div>
+<!-- About End -->
+
+
+<!-- FOOTER -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-10 col-lg-offset-1 text-center">
+                 <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+              </div>
+          </div>
+      </div>
+    </footer>
+<!-- JavaScript -->
+<script src="js/jquery.typer.js"></script> 
+<script>
+  $('[data-typer-targets]').typer();
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+              $('html,body').animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+              return false;
+          }
+        }
+      });
+    });
+</script>
+
+</body>
+</html>

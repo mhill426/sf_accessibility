@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>hearing</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hearing">
+            <path d="M100.076172,241.28418 C100.076172,241.28418 100.076172,270.898438 128.475586,270.898438 C156.875,270.898438 157.942829,241.28418 157.619141,241.28418 C160.748047,216.867188 193.992188,190.932617 204.615969,185.094073 C225.15117,173.808481 238,148.237073 238,123 C238,84.3400675 206.659932,53 168,53 C129.340068,53 98,84.3400675 98,123" id="Oval" stroke="#0082ED" stroke-width="10"></path>
+            <path d="M62,30 L93.75527,68.6212743" id="Line" stroke="#0082ED" stroke-width="10" stroke-linecap="square"></path>
+            <path d="M206,208 L237.75527,246.621274" id="Line" stroke="#0082ED" stroke-width="10" stroke-linecap="square"></path>
+            <path d="M133,191.789062 C148.463973,191.789062 161,179.253035 161,163.789062 C161,148.325089 148.463973,135.789062 133,135.789062 C133,128.978516 135.692872,95 168.371582,95 C201.050292,95 203.699188,122.996434 203.743163,128.978516" id="Oval-2" stroke="#0082ED" stroke-width="10"></path>
+            <path d="" id="Path-2" stroke="#979797"></path>
+        </g>
+    </g>
+</svg>

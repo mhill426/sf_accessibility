@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>San Francisco - Accessibility Guide - Why</title>
+    <meta name="description" content="Why web accessibility matters">
+    <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, guide, educational, training, checklist, guidelines, user, experience, human-centered" />
+    <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-spy="scroll" data-target=".sidebar">
+<a class="skip-to hide-visually focusable" href="#why">Skip to main content</a>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">SF <strong>Accessibility Guide</strong></a>
+      </div> 
+      <div id="navbar-collapse" class="collapse navbar-collapse"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown hidden-md hidden-lg hidden-xl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Why<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="why.html#why">Overview</a></li>
+              <li><a href="why.html#users">Users</a></li>
+              <li><a href="why.html#devices">Devices</a></li>
+              <li><a href="why.html#law">Law</a></li>
+              <li><a href="why.html#standards">Standards</a></li>
+            </ul>
+          </li>
+          <li class="dropdown hidden-md hidden-lg hidden-xl">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">How<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="how.html#how">Overview</a></li>
+              <li><a href="how.html#keyboard">Keyboard</a></li>
+              <li><a href="how.html#images">Images</a></li>
+              <li><a href="how.html#contrast">Color Contrast</a></li>
+              <li><a href="how.html#forms">Forms</a></li>
+              <li><a href="how.html#tables">Tables</a></li>
+              <li><a href="how.html#repeat-links">Repetitive Links</a></li>
+              <li><a href="how.html#motion">Animations & Motion</a></li>
+              <li><a href="how.html#titles">Page Titles</a></li>
+              <li><a href="how.html#headings">Headings</a></li>
+              <li><a href="how.html#landmarks">Landmarks</a></li>
+              <li><a href="how.html#multimedia">Multimedia</a></li>
+              <li><a href="how.html#timeouts">Time Outs</a></li>
+              <li><a href="how.html#text">Text Properties</a></li>
+              <li><a href="how.html#CSS">CSS Dependence</a></li>
+              <li><a href="how.html#frames">Frames</a></li>
+              <li><a href="how.html#plugins">Plug-ins</a></li>
+              <li><a href="how.html#alt-versions">Alternate Versions</a></li>
+            </ul>
+          </li>
+          <li class="hidden-xs hidden-sm"><a href="why.html">Why</a></li>
+          <li class="hidden-xs hidden-sm"><a href="how.html">How</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </div>
+    </div>  
+  </nav>
+<!-- Side Menu -->
+  <div class="col-md-3 pull-right" role="complementary"> 
+  <aside class="sidebar hidden-print hidden-xs hidden-sm affix" style=""> 
+    <ul class="sidenav nav"> 
+      <li class="active"><a href="#why">Overview</a> </li> 
+      <li class=""> <a href="#users">Users</a> 
+        <ul class="item-nav nav">  
+          <li class=""><a href="#users-personas">User Personas</a></li> 
+          <li class=""><a href="#users-testing">User Testing</a></li>
+        </ul> 
+      </li> 
+      <li class=""> <a href="#devices">Devices</a> 
+        <ul class="item-nav nav"> 
+          <li class=""><a href="#devices-examples">Examples</a></li> 
+          <li class=""><a href="#devices-usage">Usage</a></li> 
+          <li class=""><a href="#devices-methods">Methods</a></li>  
+        </ul> 
+      </li>  
+      <li class=""> <a href="#law">Law</a> 
+        <ul class="item-nav nav"> 
+          <li class=""><a href="#law-ada">ADA</a></li> 
+          <li class=""><a href="#law-508">Section 508</a></li>  
+        </ul> 
+      </li>  
+      <li class=""> <a href="#standards">Standards</a> 
+        <ul class="item-nav nav"> 
+          <li class=""><a href="#standards-wcag">WCAG 2.0</a></li> 
+          <li class=""><a href="#standards-wai">WAI</a></li> 
+          <li class=""><a href="#standards-wai-aria">WAI-ARIA</a></li>  
+        </ul> 
+      </li>  
+    </ul> 
+    <a class="back-to-top" href="#why"> Back to top </a> 
+  </aside> 
+  </div>
+<!-- /Side Menu -->
+<!-- Header -->
+    <header id="why" class="container">
+      <div class="col-md-9">
+          <img class="category-icon col-xs-5 col-sm-3 col-md-3" src="assets/icons/why2-icon.svg"> 
+          <div class="category-title col-xs-10 col-sm-9 col-md-9">
+            <h1>Why it matters</h1>
+            <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
+          </div> 
+          <div class="category-overview col-xs-12">
+            <p>As a city we are required by law to meet the accessibility guidelines set forth by the Americans with Disabilities Act and Section 508 of the Rehabilitation Act.  But for too long our approch has been one of compliance, designed around certain best practices; but, best practices perpetuate a conflicting “one size fits all” model that’s rarely rooted in any actual insight (much less insight that is relevant to your product) propelling products toward a state of mediocrity.</p>
+            <p>We have choosen to completely revamp our guidelines and impliment an educational approach throughout our product teams. From project managers to content strategist and designers to developers, we all learn why this matters and how to implement, holding each other accountable in the process.  We have actually brought an idealogy of empathy into our entire design and development process. Focused on research, testing, and feedback of ALL our users.</p>
+            <p>First we need to educate ourselves in how people with disabilities interact through their numerous different devices. What are the limitations and advantages of each device?</p>
+          </div>  
+      </div>
+    </header>
+<!-- Header End -->
+<!-- Users -->
+    <section id="users" class="container section-content">
+      <div class="col-md-9">
+        <h2>Users</h2>
+          <p>To first provide us with a shared vocabulary as we move through this guide we have set up four categories below that allow us to showcase how your users interact with and experience your website. Then we can begin to develop an understanding of how to best imlement our designs and deliver content.</p>
+          <div class="row">
+            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/vision.svg" alt="pictogram of an eye with a line crossing through it">
+            <div class="col-xs-12 col-sm-10 ability-content">
+              <h3><strong>Visual</strong> - Blind, Low Vision, Color Blind</h3>
+              <p>Convert visual info to audio <br/>Small type, strange type-face, dispersed layout <br/>Color does not convey meaning</p>
+            </div>
+          </div>
+          <div class="row">
+            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/hearing.svg" alt="pictogram of an ear with a line crossing through it">
+            <div class="col-xs-12 col-sm-10 ability-content">
+              <h3><strong>Auditory</strong> - Deaf, Hard of hearing</h3>
+              <p>Closed Captioning, downloadable transcripts</p>
+            </div>
+          </div>
+          <div class="row">
+            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/cognitive.svg" alt="pictogram of human brain">
+            <div class="col-xs-12 col-sm-10 ability-content">
+              <h3><strong>Cognitive</strong> - Attention, Learning Disorders</h3>
+              <p>Convoluted presentation of information</p>
+            </div>
+          </div>
+          <div class="row">
+            <img class="col-xs-3 col-sm-2 ability-icon" src="assets/icons/motor.svg" alt="pictogram of a human hand">
+            <div class="col-xs-12 col-sm-10 ability-content">
+              <h3><strong>Physical</strong> - Mobility, Tremors, Paralysis</h3>
+              <p>Limits input devices (keyboard, mouse, touch screen)</p>
+            </div>
+          </div> 
+      </div> 
+    </section>
+<!-- Users End -->
+<!-- Personas -->
+    <section id="users-personas" class="container section-content">
+      <div class="col-md-9">
+        <h2>Users Personas</h2>
+          <p>Understanding the user is key to providing any relevant solution. User personas allow us to better imagine ourselves in certain scenarios and understand what limitations exist.</p>
+          <p>Empathy allows us to keep the user front of mind while building and testing frequently to constantly challenge our assumptions. Once we place ourselves in another's shoes we can start to think and develop solutions to alleviate those barriers. </p>
+        <div class="row">
+          <div class="persona-img-group col-xs-12">
+            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_1.jpg" alt="young man playing a guitar">
+            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_2.jpg" alt="young man editing music with his laptop set ontop of a keyboard piano">
+            <img class="col-xs-6 col-sm-4 persona-img" src="assets/personas/nick_3.jpg" alt="close up of young man's hands playing guitar">
+          </div>  
+          <div class="col-xs-12 persona-content">
+            <h3><strong>Nick, 26</strong></h3>
+            <p>Lives in Lower Haight, and works downtown as an accountant by day, but his passion is music. He’s been playing guitar since he was 13 and writes his own songs. He uses the internet to find new music and publish his own. Check him out on SoundCloud!</p>
+            <p>He was also born blind. Making it hard to navigate some music blogs. He gets frustrated when some websites autoplay music or video, as it is sometimes hard to find the controls using keyboard navigation.</p>
+          </div>
+          <div class="col-xs-12 persona-content">
+            <h3><strong>Ruth, 84</strong></h3>
+            <p>Has 3 children and 4 grandchildren. She lives in Noe Valley and uses MUNI as her primary form of transportation. An Avid user of email & Facebook to keep up with her family, she just bought her first smartphone.</p>
+            <p>When visiting new websites she finds herself enlarging text and using high contrast modes frequently.</p>
+          </div>
+        </div>  
+      </div>
+    </section>      
+<!-- Personas End -->
+<!-- Devices -->
+    <section id="devices" class="container section-content">
+      <div class="col-md-9">
+        <h2>Devices</h2>
+          <p>Some users find it helpful to use specialized input or output devices. Including: screen readers, speech to text, braille displays, and many more. Knowing how these devices interpret and navigate your site is important to how you structure your code. </p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-6">
+              <h4>Braille Display</h4>
+              <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo.</p>
+            </div>
+            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/braille_display.jpg" alt="refreshable braille display made by Humanware"/>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-6 pull-right">
+              <h4>Switch Access</h4>
+              <p>Lorem ipsum Enim pariatur in nulla quis in irure minim ut ullamco qui minim in commodo.</p>
+            </div>
+            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/switch_control.jpg" alt="compact wired switch or button, made by AbleNet"/>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-6">
+              <h4>Eye or Face Tracking</h4>
+              <p>A computer input device that takes the place of a mouse by tracking the users head movements from a small dot placed on the forehead to move the cursor. Used by people with little or no hand movement.</p>
+            </div>
+            <img class="device-img col-xs-12 col-sm-8 col-md-6" src="assets/devices/tracking_camera.jpg" alt="facial tracking camera made by AbleNet"/>
+          </div>
+      </div> 
+    </section>
+<!-- Devices End -->
+<!-- Law -->
+    <section id="law" class="container section-content">
+      <div class="col-md-9">
+        <h2>Law</h2>
+          <p><a href="https://www.ada.gov/index.html" target="_blank">Americans with Disabilities Act of 1990 (ADA)</a> is a civil rights law. It prohibits discrimination on the basis of disability, as long as the person is otherwise qualified</p>
+          <p><a href="https://www.ada.gov/2010ADAstandards_index.htm" target="_blank">Title II and III of the ADA</a> requires that all programs offered through the state and local government such as the City and County of San Francisco must be accessible and usable to people with disabilities.</p>
+          <p><a href="https://www.disability.gov/rehabilitation-act-1973/" target="_blank">The Federal Rehabilitation Act of 1973</a> prevents discrimination based on disability</p>
+          <p><a href="https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards" target="_blank">Section 508 of the Rehab Act</a> requires Federal agencies to make their electronic and information technology accessible to people with disabilities.</p>
+      </div> 
+    </section>
+<!-- Law End -->
+<!-- Standards -->
+    <section id="standards" class="container section-content">
+      <div class="col-md-9">
+        <h2>Standards</h2>
+          <p><a href="http://www.w3.org" target="_blank">The World Wide Web Consortium (W3C)</a> is an international community that develops open standards to ensure the long-term growth of the Web.</p>
+          <p><a href="http://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative (WAI)</a> is an effort to improve the accessibility of the web for people with disabilities.</p>
+          <p><a href="http://www.w3.org/WAI/intro/wcag.php" target="_blank">Web Content Accessibility Guidelines (WCAG) 2.0</a> is a stable, referenceable technical standard with 3 levels of compliance</p>
+          <p><a href="http://www.w3.org/WAI/intro/aria.php" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a> is a technical specification that provides a framework used to improve the interoperability of dynamic content generated by scripts</p>
+          <br/><br/><br/><br/><br/>
+      </div> 
+
+    </section>
+<!-- Standards End -->
+<!-- FOOTER -->
+    <footer class="col-xs-12">
+        <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+    </footer>
+<!-- JavaScript --> 
+<script>
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>

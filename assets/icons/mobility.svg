@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>mobility</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobility" stroke="#0082ED" stroke-width="10">
+            <path d="M113,128 C74.3400675,128 43,159.340068 43,198 C43,236.659932 74.3400675,268 113,268 C151.659932,268 183,236.659932 183,198" id="Oval-5"></path>
+            <polyline id="Rectangle" points="244 239 210 177 132 177 132 85"></polyline>
+            <circle id="Oval" cx="132" cy="51" r="20"></circle>
+            <path d="M69,212 C75.7657342,229.945047 88.553278,242.103251 108,245" id="Oval-5"></path>
+            <path d="M132,129 L183,129" id="Line" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

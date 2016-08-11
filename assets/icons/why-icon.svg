@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="250px" viewBox="0 0 300 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Why</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="95" cy="125" rx="85" ry="85"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="172" height="172">
+            <rect x="9" y="39" width="172" height="172" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Why">
+            <g id="Oval">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <use stroke="#0082ED" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+            <ellipse id="Oval" fill="#0A3764" cx="205" cy="125" rx="85" ry="85"></ellipse>
+            <path d="M150,189.809676 C168.354094,174.218309 180,150.969178 180,125 C180,99.0308217 168.354094,75.7816905 150,60.1903239 C131.645906,75.7816905 120,99.0308217 120,125 C120,150.969178 131.645906,174.218309 150,189.809676 Z" id="Combined-Shape" fill="#0082ED"></path>
+        </g>
+    </g>
+</svg>
