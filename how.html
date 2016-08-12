@@ -21,6 +21,16 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-spy="scroll" data-target=".sidebar">
+  <div id="sf-bar" class="col-xs-12">
+    <div class="container">
+      <div class="col-xs-8">
+        <p>An official website of the City & County of San Francisco</p>
+      </div>
+      <div class="col-xs-4">
+        <p class="pull-right">This site is in beta and a work in progress</p>
+      </div>
+    </div> 
+  </div>
   <a class="skip-to hide-visually focusable" href="#how">Skip to main content</a>
   <nav class="navbar navbar-fixed-top">
     <div class="container">
@@ -120,11 +130,11 @@
           <li class=""><a href="#repeat-links-methods">Methods</a></li> 
         </ul> 
       </li>   
-      <li class=""> <a href="#animate">Animations & Motion</a> 
+      <li class=""> <a href="#motion">Animations & Motion</a> 
         <ul class="item-nav nav"> 
-          <li class=""><a href="#animate-examples">Examples</a></li> 
-          <li class=""><a href="#animate-usage">Usage</a></li> 
-          <li class=""><a href="#animate-methods">Methods</a></li> 
+          <li class=""><a href="#motion-examples">Examples</a></li> 
+          <li class=""><a href="#motion-usage">Usage</a></li> 
+          <li class=""><a href="#motion-methods">Methods</a></li> 
         </ul> 
       </li>
       <li class=""> <a href="#titles">Page Titles</a>
@@ -199,7 +209,7 @@
 <!-- Header -->
     <header id="how" class="container">
       <div class="col-md-9">
-          <img class="category-icon col-xs-5 col-sm-3 col-md-3" src="assets/icons/how2-icon.svg">  
+          <img class="category-icon col-xs-5 col-sm-3 col-md-3" src="assets/icons/how2-icon.svg" alt="">  
           <div class="category-title col-xs-10 col-sm-9 col-md-9">
             <h1>How to implement</h1>
             <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
@@ -218,7 +228,7 @@
   <h2>Checklist</h2>
   <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
 
-  <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/">WCAG2.0 AA</a> </p>
+  <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG2.0 AA</a> </p>
 
   <ul>
   <li>A - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site</li>
@@ -231,25 +241,25 @@
   <h3>A - Critical</h3>
 
   <ol>
-  <li><a href="../keyboard">Site is keyboard accessible</a>
+  <li><a href="#keyboard">Site is keyboard accessible</a>
 
   <ul>
   <li>All interactions can be accessed with a keyboard</li>
   </ul></li>
-  <li><a href="../keyboard">Site is free of keyboard traps</a>
+  <li><a href="#keyboard">Site is free of keyboard traps</a>
 
   <ul>
   <li>The keyboard focus is never trapped in a loop</li>
   </ul></li>
-  <li><a href="../forms">All <code>form</code> inputs have explicit labels</a></li>
-  <li><a href="../images">All relevant images use an <code>img</code> tag</a></li>
-  <li><a href="../images">All images have <code>alt</code> attributes</a></li>
-  <li><a href="../multimedia">Multimedia is tagged</a>
+  <li><a href="#forms">All <code>form</code> inputs have explicit labels</a></li>
+  <li><a href="#images">All relevant images use an <code>img</code> tag</a></li>
+  <li><a href="#images">All images have <code>alt</code> attributes</a></li>
+  <li><a href="#multimedia">Multimedia is tagged</a>
 
   <ul>
   <li>All multimedia has appropriate captioning and audio description</li>
   </ul></li>
-  <li><a href="../color">Text has sufficient color contrast</a>
+  <li><a href="#contrast">Text has sufficient color contrast</a>
 
   <ul>
   <li>All text has a contrast ratio of 4.5:1 with the background</li>
@@ -259,24 +269,24 @@
   <h3>B - Less Critical</h3>
 
   <ol>
-  <li><a href="../keyboard">Site never loses focus</a>
+  <li><a href="#keyboard">Site never loses focus</a>
 
   <ul>
   <li>Focus is always visible when moving through the page with the keyboard</li>
   </ul></li>
-  <li><a href="../keyboard">Tab order is logical</a></li>
-  <li><a href="../forms">Form instructions are associated with inputs</a></li>
-  <li><a href="../timeouts">Site doesn't timeout unexpectedly</a>
+  <li><a href="#keyboard">Tab order is logical</a></li>
+  <li><a href="#forms">Form instructions are associated with inputs</a></li>
+  <li><a href="#timeouts">Site doesn't timeout unexpectedly</a>
 
   <ul>
   <li>Identify elements that may "timeout" and verify that the user can request more time</li>
   </ul></li>
-  <li><a href="../tables">Tables are coded properly</a>
+  <li><a href="#tables">Tables are coded properly</a>
 
   <ul>
   <li>Tables have proper headers and column attributes</li>
   </ul></li>
-  <li><a href="../headings">Headings are nested properly</a>
+  <li><a href="#headings">Headings are nested properly</a>
 
   <ul>
   <li>Heading elements are nested in a logical way</li>
@@ -286,34 +296,34 @@
   <h3>C - Minor</h3>
 
   <ol>
-  <li><a href="../frames">Frames are named</a>
+  <li><a href="#frames">Frames are named</a>
 
   <ul>
   <li>All frames have a name element</li>
   </ul></li>
-  <li><a href="../flashing">Flashing elements are compliant</a>
+  <li><a href="#motion">Flashing elements are compliant</a>
 
   <ul>
   <li>Elements that flash on screen do so at a rate of less than 3hz</li>
   </ul></li>
-  <li><a href="../properties">Language is set</a>
+  <li><a href="#properties">Language is set</a>
 
   <ul>
   <li>The language for the page is set</li>
   <li>The language for sections on the page that differ from the site language are set</li>
   </ul></li>
-  <li><a href="../css">CSS is not required to use the page</a>
+  <li><a href="#CSS">CSS is not required to use the page</a>
 
   <ul>
   <li>The page makes sense with or without CSS</li>
   </ul></li>
-  <li><a href="../links">Links are unique and contextual</a>
+  <li><a href="#links">Links are unique and contextual</a>
 
   <ul>
   <li>All links can be understood taken alone, i.e 'Read more - about 508'</li>
   </ul></li>
-  <li><a href="../pagetitles">Page titles are descriptive</a></li>
-  <li><a href="../plugins">Required plugins are linked on the page</a></li>
+  <li><a href="#pagetitles">Page titles are descriptive</a></li>
+  <li><a href="#plugins">Required plugins are linked on the page</a></li>
   </ol>
 
   </div>
@@ -398,7 +408,7 @@
       This div was hidden, now it's not!
   <span class="nt">&lt;/div&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="ok">
   <p>Avoid using tabindex of &gt;= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.</p>
   </blockquote>
 
@@ -416,7 +426,7 @@
 
   <p><a class="sr-only moveFocus" href="#">hidden</a></p>
 
-  <blockquote>
+  <blockquote class="fail">
   <p>This is an example of a keyboard trap. Focus moves in a loop making the rest of the page inaccessible. A quick test is to tab through the page quickly and ensure you can get focus back to the address bar.</p>
   </blockquote>
   </div>
@@ -457,11 +467,11 @@
 
   <p><img style="width:170px;" src="assets/examples/no-smoke-sign.jpg" alt="Sign that reads No smoking in this area"></p>
   
-  <h3>Correct</h3>
+  <h4 class="pass-fail">Correct</h4>
   
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">"Sign that reads No smoking in this area"</span><span class="nt">&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>Preferred method for providing alternate content.
   Clear alt tag with all text included.</p>
   </blockquote>
@@ -470,7 +480,7 @@
 
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span> <span class="na">title=</span><span class="s">"Sign that reads No smoking in this area"</span><span class="nt">&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="ok">
   <p>Acceptable, but less compatible with certain Assitive technologies
   Clear title tag with all text included.</p>
   </blockquote>
@@ -480,7 +490,7 @@
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
   <span class="nt">&lt;span&gt;</span>Sign that reads No smoking in this area<span class="nt">&lt;/span&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="ok">
   <p>Information contained in the image is provided on the page.
   In most instances, an alt tag would be preferred.
   Images marked with an empty alt (alt="") are considered
@@ -489,11 +499,11 @@
 
   <hr>
 
-  <h4>Incorrect</h4>
+  <h4 class="pass-fail">Incorrect</h4>
 
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span><span class="nt">&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="fail">
   <p>Image is missing an alt tag and alternative content</p>
   </blockquote>
 
@@ -501,7 +511,7 @@
 
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span> <span class="na">alt=</span><span class="s">"sign"</span><span class="nt">&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="fail">
   <p>Alt tag is missing text from image</p>
   </blockquote>
 
@@ -509,13 +519,25 @@
 
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span> <span class="na">alt=</span><span class="s">"Image of sign that says NO SMOKING IN THIS AREA"</span><span class="nt">&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="fail">
   <p>Avoid using "Image of" or "Picture of" as the screen reader
   will notify the user that it is an image. 
   Also avoid using all caps as some screen readers will read
   each letter. ie. W-A-R-N-I-N-G</p>
   </blockquote>
-  
+
+  <h3>Symbols</h3>
+  <p>An icon used in an alert to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
+
+  <div class="bs-example" data-example-id="glyphicons-accessibility"> <div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="sr-only">Error:</span> Enter a valid email address </div> 
+  </div>
+
+  <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-exclamation-sign"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Error:<span class="nt">&lt;/span&gt;</span>
+  Enter a valid email address
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
   </div>
 </section>
 <!-- Images end -->
@@ -525,16 +547,16 @@
   <div class="col-md-9">
   
   <h2>Color and Contrast</h2>
-  <p>There are two aspects we need to address when it comes to color, contrast and color dependence. Color contrast is the ratio of the foreground color(text) and the background color. Color dependence is the need to see color to understand the information. Unless specific agency requirements dictate otherwise, color contrast should meet the <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">WCAG 2.0 AA</a> minimum color contrast ratio of <strong>4.5:1</strong>.</p>
+  <p>There are two aspects we need to address when it comes to color, contrast and color dependence. Color contrast is the ratio of the foreground color(text) and the background color. Color dependence is the need to see color to understand the information. Unless specific agency requirements dictate otherwise, color contrast should meet the <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">WCAG 2.0 AA</a> minimum color contrast ratio of <strong>4.5:1</strong>.</p>
 
   <h3>Testing</h3>
 
   <h4>Color Contrast</h4>
 
   <ol>
-  <li>Using a <a href="http://www.paciellogroup.com/resources/contrastanalyser/">color contrast checker</a>, select the darkest/lightest section of the text</li>
+  <li>Using a <a href="http://www.paciellogroup.com/resources/contrastanalyser/" target="_blank">color contrast checker</a>, select the darkest/lightest section of the text</li>
   <li>Select the darkest/lightest section of the background</li>
-  <li>Check the ratio and ensure its greater than <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">4.5:1</a> (ex 5.3:1 would pass)</li>
+  <li>Check the ratio and ensure its greater than <a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">4.5:1</a> (ex 5.3:1 would pass)</li>
   </ol>
 
   <p>Note: Run this test for all states of the text (hover, visited, focused). This test should also be performed on images of text unless the image is a logo, which are exempt. </p>
@@ -548,17 +570,17 @@
 
   <h3>Examples</h3>
 
-  <h4>Failures</h4>
+  <h4 class="pass-fail">Failures</h4>
 
   <p><span style="color:#58AA02">This text fails. </span></p>
 
-  <blockquote>
+  <blockquote class="fail">
   <p>This text fails because it is too light. The contrast ratio is (2.93 : 1). </p>
   </blockquote>
 
   <p><span style="color:#FFFFFF; background:#8D8E90">This text fails.</span></p>
 
-  <blockquote>
+  <blockquote class="fail">
   <p>This text fails because the background isn't dark enough. The contrast ratio is (3.28 : 1).</p>
   </blockquote>
 
@@ -568,21 +590,21 @@
 
   <p><label for="lname" style="color:red">Last Name&nbsp;</label><input type"text"="" id="lname"></p>
 
-  <blockquote>
+  <blockquote class="fail">
   <p>This is a failure because the only indication of which fields are required is the color of the text label.</p>
   </blockquote>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <p><span style="color:#458503">This text passes. </span></p>
 
-  <blockquote>
+  <blockquote class="pass">
   <p>This text passes. The contrast ratio is (4.56 : 1). </p>
   </blockquote>
 
   <p><span style="color:#FFFFFF; background:#757679">This text passes.</span></p>
 
-  <blockquote>
+  <blockquote class="pass">
   <p>This text passes. The contrast ratio is (4.54 : 1).</p>
   </blockquote>
 
@@ -592,7 +614,7 @@
 
   <p><label for="lname" style="color:red">* Last Name&nbsp;</label><input type"text"="" id="lname"></p>
 
-  <blockquote>
+  <blockquote class="pass">
   <p>This example passes because the * and the red text indicates the required field.</p>
   </blockquote>
 
@@ -632,7 +654,7 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <fieldset>
   <legend>Name</legend>
@@ -661,13 +683,13 @@
   <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'radio'</span> <span class="na">name=</span><span class="s">'soup'</span> <span class="na">value=</span><span class="s">'tomato'</span> <span class="na">id=</span><span class="s">'tomato'</span> <span class="na">title=</span><span class="s">'Tomato'</span><span class="nt">&gt;</span><span class="ni">&amp;nbsp;</span>Tomato
   <span class="nt">&lt;/fieldset&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p><strong><em>Name:</em></strong> Each form element has a <code>label</code>, and its associated with the <code>for</code> tag. The <code>for</code> tag refers to the <code>id</code> of the <code>input</code>. When looking at this form, 'First' and 'Last' wouldn't make since without 'Name.' This is associated with the <code>fieldset</code> and <code>legend</code>. All elements are wrapped in a <code>fieldset</code>. There can only be one <code>legend</code> tag per <code>fieldset</code>. Anything in the <code>legend</code> tag will be associated.</p>
 
   <p><strong><em>Favorite Soup:</em></strong> <code>Fieldset</code> and <code>legend</code> is often used for radio buttons as its the easiest way to associate the radio buttons with the question. Notice there are no <code>label</code>s for the radio buttons, but each button has a <code>title</code> tag for assistive technology to read. </p>
   </blockquote>
 
-  <h4>Fails</h4>
+  <h4 class="pass-fail">Fails</h4>
 
   <fieldset>
   <legend>Name</legend>
@@ -699,7 +721,7 @@
   <span class="nt">&lt;/fieldset&gt;</span>
   <span class="nt">&lt;br&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="fail">
   <p><strong><em>Failure:</em></strong> First name label <code>for</code> and <code>id</code> don't match.</p>
 
   <p><strong><em>Failure:</em></strong> Last name has an invalid <code>id</code>.</p>
@@ -819,7 +841,7 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <h5>Simple Table</h5>
 
@@ -880,7 +902,7 @@
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/table&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>Looking at this table, the column headers all relate to the cells below. This is done programatically with <code>scope="col"</code>. Each height and age value is related to the person and this is done programatically with <code>scope="row"</code>.</p>
   </blockquote>
 
@@ -962,7 +984,7 @@
     <span class="nt">&lt;/tr&gt;</span>
   <span class="nt">&lt;/table&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>This is an example of a complex table, all the cells are associated to their respective headers with the <code>headers</code> attribute. Most tables don't require this level of complexity. </p>
   </blockquote>
 
@@ -1037,7 +1059,7 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <p>Home <a href="../" title="home">Click Here</a></p>
 
@@ -1046,17 +1068,17 @@
 
   Keyboard Access <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">'/keyboard'</span> <span class="na">aria-label=</span><span class="s">"Keyboard Access"</span><span class="nt">&gt;</span>Click Here<span class="nt">&lt;/a&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>These links are not unique, but the <code>title</code> attribute in the first link gives a screen reader user context and the <code>aria-label</code> provides the context in the second link. </p>
   </blockquote>
 
   <h5>Skip Navigation</h5>
-  <div class="highlight"><pre><code class="language-html" data-lang="html">//This is the code for this very site
+  <div class="highlight"><pre><code class="language-html" data-lang="html">
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"skip-nav"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#mainContent"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   ...
-  <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"mainContent"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">class=</span><span class="s">'mainContent'</span><span class="nt">&gt;</span>Links and Repetitive Content<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"mainContent"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">class=</span><span class="s">'mainContent'</span><span class="nt">&gt;</span>Main Content Heading<span class="nt">&lt;/h1&gt;</span>
 
   </code></pre></div><div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span><span class="nc">.skip-nav</span> <span class="nt">a</span> <span class="p">{</span>
     <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
@@ -1083,7 +1105,7 @@
       <span class="nl">outline</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
    <span class="p">}</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>This is how the 'Skip Navigation' was achieved for the accessiblity site, feel free to use for your own site. </p>
   </blockquote>
   
@@ -1092,7 +1114,7 @@
   <!-- Repetitive Links end -->
 
   <!-- Animations & Motions -->
-<section id="animate" class="container section-content">
+<section id="motion" class="container section-content">
 <div class="col-md-9">
   
   <h2>Flashing</h2>
@@ -1115,23 +1137,23 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <p><marquee scrolldelay="400">Here is a marquee, I bet you haven't seen this in a while, anyway, the scroll delay is set to 400.</marquee></p>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;marquee</span> <span class="na">scrolldelay=</span><span class="s">"400"</span><span class="nt">&gt;</span>
       Here is a marquee, I bet you haven't seen this in a while, anyway, the scroll delay is set to 400.
   <span class="nt">&lt;/marquee&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>This is an example of marquee. The scrolldelay is set and it is equal to 400 meaning it is compliant. </p>
   </blockquote>
 
-  <h4>Fails</h4>
+  <h4 class="pass-fail">Fails</h4>
 
   <p><button type="button" id="blinkbutton">Click to see non-compliant flashing</button>
   <span class="blink" style="display:none;">This text is blinking</span></p>
 
-  <blockquote>
+  <blockquote class="fail">
   <p><strong><em>Failure:</em></strong> This blinking text fails because the rate of flashing can't be determined and its greater than 3hz.</p>
   </blockquote>
   
@@ -1160,7 +1182,7 @@
   <h3>Examples</h3>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;title&gt;</span>Page Titles - 18F Accessibility<span class="nt">&lt;/title&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>The title for this page is 'Page Titles - 18F Accessibility'. The first half is the name of this page and the second is the name of the site.  </p>
   </blockquote>
 
@@ -1198,7 +1220,7 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <div>
     <h3>Category</h3>
@@ -1217,11 +1239,11 @@
     <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>This section has a main category and two sub categories. The sub categories are on the same level and as such use the the same heading element.</p>
   </blockquote>
 
-  <h4>Fails</h4>
+  <h4 class="pass-fail">Fails</h4>
 
   <div>
     <h3>Category</h3>
@@ -1240,7 +1262,7 @@
     <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote  class="fail">
   <p>This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of <code>Category</code> or <code>Sub category 1</code></p>
   </blockquote>
   
@@ -1359,7 +1381,7 @@
 
   <h3>Examples</h3>
 
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <p>Fill out this form</p>
 
@@ -1371,7 +1393,7 @@
   <label for="t5">Field 5</label>&nbsp;<input type="text" id="t5"><br>
   </form>
 
-  <blockquote>
+  <blockquote class="pass">
   <p>This passes becuase a timeout does occur, but you are given more than 20 seconds to request more time. </p>
   </blockquote>
   </div>
@@ -1401,20 +1423,26 @@
 
   <h3>Examples</h3>
 
-  <h4>Failure</h4>
-
-  <p>Sus ojos son verdes.</p>
-
-  <blockquote>
-  <p>This text is Spanish and lacks a <code>lang</code> attribute.</p>
-  </blockquote>
-
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <p lang="es">Sus ojos son verdes.</p>
 
-  <blockquote>
+  <div class="highlight"><pre><code class="language-html" data-lang="html">
+    <span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"es"</span><span class="nt">&gt;</span> Sus ojos son verdes.<span class="nt">&lt;/p&gt;</span>
+  </code></pre></div>
+
+  <blockquote class="pass">
   <p>This text passes because the <code>lang="es"</code> attribute identifies its content as Spanish.</p>
+  </blockquote>
+
+  <h4 class="pass-fail">Failure</h4>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html">
+    <span class="nt">&lt;p&gt;</span>Sus ojos son verdes.<span class="nt">&lt;/p&gt;</span>
+  </code></pre></div>
+
+  <blockquote class="fail">
+  <p>This text is Spanish and lacks a <code>lang</code> attribute.</p>
   </blockquote>
   </div>
 </section>
@@ -1451,36 +1479,34 @@
   <h3>Testing</h3>
 
   <ol>
-  <li>Identify all <code>frame</code>s / <code>iframe</code>s on a page</li>
+  <li>Identify all <code>frame</code> / <code>iframe</code> elements on a page</li>
   <li>Using the keyboard, navigate to each frame to ensure content is accessible</li>
   <li>Check the <code>title</code> or <code>name</code> attribute of each frame for a description of the content</li>
   </ol>
 
   <h3>Examples</h3>
 
-  <h4>Failure</h4>
-
-  <iframe src="iframeform.html"></iframe>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-  </code></pre></div>
-  <blockquote>
-  <p>This <code>iframe</code> doesn't have a title or name.</p>
-  </blockquote>
-
-  <iframe src="iframeform.html" name="Provide an address form"></iframe>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span> <span class="na">name=</span><span class="s">'Provide an address form'</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-  </code></pre></div>
-  <blockquote>
-  <p>This <code>name</code> isn't correct</p>
-  </blockquote>
-
-  <h4>Passes</h4>
+  <h4 class="pass-fail">Passes</h4>
 
   <iframe src="iframeform.html" title="Provide Name Form"></iframe>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span> <span class="na">title=</span><span class="s">'Provide Name Form'</span><span class="nt">&gt;&lt;/iframe&gt;</span>
   </code></pre></div>
-  <blockquote>
+  <blockquote class="pass">
   <p>Correct <code>title</code> is provided. This would also pass if this information was in a <code>name</code> attribute.</p>
+  </blockquote>
+
+  <h4 class="pass-fail">Failure</h4>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  </code></pre></div>
+  <blockquote class="fail">
+  <p>This <code>iframe</code> doesn't have a title or name.</p>
+  </blockquote>
+
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span> <span class="na">name=</span><span class="s">'Provide an address form'</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  </code></pre></div>
+  <blockquote class="fail">
+  <p>This <code>name</code> isn't correct</p>
   </blockquote>
   </div>
 </section>
