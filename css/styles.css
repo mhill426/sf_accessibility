@@ -795,11 +795,13 @@ footer p {
 
 /* -------------------- All Mobile Sizes -------------------- */
 @media only screen and (max-width: 767px) { 
+  body {padding-top: 22px;}
   .btn-custom { font-size: .8em; background: #0077DA; }
   .btn-custom2 { font-size: .8em; }
   .title { font-size: 4em; }
   .category-title h1{ font-size: 3em; }
   .category-icon{float: left;}
+  .navbar { top:0; }
   .navbar a:hover, .navbar a:focus{ border: none; color: #13487D; }
   h1 { font-size: 2.2em; }
   h2 { font-size: 2em; }
