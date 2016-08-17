@@ -13,6 +13,7 @@
 }
 .hide-visually {
   position: absolute;
+  top:75px;
   left: -500px;
 }
 .hide-visually.focusable:active, .hide-visually.focusable:focus {
@@ -29,7 +30,6 @@ html,
 body {
   width: 100%;
   margin: 0 0;
-  padding-top: 35px;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -362,10 +362,12 @@ a:hover {
   margin-top: 20px;
   background: #0077DA center center fixed;
 }
+
 #home{
   min-height: 600px;
   background-color: #0077DA;
   padding-top: 50px;
+  margin-top: 70px;
 }
 .title {
   color: #fff;
@@ -420,7 +422,7 @@ a:hover {
 #why,
 #how,
 #resources{
-  padding-top: 50px;
+  padding-top: 120px;
 }
 .category-title h1{
   color: #0077DA;
@@ -474,8 +476,8 @@ a:hover {
 
 /* Section */
 section{
-  padding-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 70px;
+  /*margin-bottom: 10px;*/
 }
 .section-content div{
   padding-top: 20px;
@@ -795,7 +797,9 @@ footer p {
 
 /* -------------------- All Mobile Sizes -------------------- */
 @media only screen and (max-width: 767px) { 
-  body {padding-top: 22px;}
+  .hide-visually { top:55px; }
+  #home{ margin-top: 50px; padding-top: 30px; }
+  #why, #how, #resources{ padding-top: 80px; }
   .btn-custom { font-size: .8em; background: #0077DA; }
   .btn-custom2 { font-size: .8em; }
   .title { font-size: 4em; }

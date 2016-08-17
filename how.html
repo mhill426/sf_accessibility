@@ -226,7 +226,7 @@
 <section id="checklist" class="container section-content"> 
   <div class="col-md-9"> 
   <h2>Checklist</h2>
-  <p>This checklist helps developers identify potential accessibility issues affecting their websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
+  <p>This checklist helps us identify potential accessibility issues affecting our websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
 
   <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG2.0 AA</a> </p>
 
@@ -1382,23 +1382,6 @@
   </ul></li>
   </ol>
 
-  <h3>Examples</h3>
-
-  <h4 class="pass-fail">Passes</h4>
-
-  <p>Fill out this form</p>
-
-  <form id="pForm">
-  <label for="t1">Field 1</label>&nbsp;<input type="text" id="t1"><br>
-  <label for="t2">Field 2</label>&nbsp;<input type="text" id="t2"><br>
-  <label for="t3">Field 3</label>&nbsp;<input type="text" id="t3"><br>
-  <label for="t4">Field 4</label>&nbsp;<input type="text" id="t4"><br>
-  <label for="t5">Field 5</label>&nbsp;<input type="text" id="t5"><br>
-  </form>
-
-  <blockquote class="pass">
-  <p>This passes becuase a timeout does occur, but you are given more than 20 seconds to request more time. </p>
-  </blockquote>
   </div>
 </section>
 <!-- Timeouts end -->
@@ -1438,15 +1421,6 @@
   <p>This text passes because the <code>lang="es"</code> attribute identifies its content as Spanish.</p>
   </blockquote>
 
-  <h4 class="pass-fail">Failure</h4>
-
-  <div class="highlight"><pre><code class="language-html" data-lang="html">
-    <span class="nt">&lt;p&gt;</span>Sus ojos son verdes.<span class="nt">&lt;/p&gt;</span>
-  </code></pre></div>
-
-  <blockquote class="fail">
-  <p>This text is Spanish and lacks a <code>lang</code> attribute.</p>
-  </blockquote>
   </div>
 </section>
 <!-- Web Text end -->
@@ -1491,8 +1465,8 @@
 
   <h4 class="pass-fail">Passes</h4>
 
-  <iframe src="iframeform.html" title="Provide Name Form"></iframe>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../iframeform/"</span> <span class="na">title=</span><span class="s">'Provide Name Form'</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  <iframe title="Provide Name Form" src="iframeform.html"></iframe>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">title=</span><span class="s">'Provide Name Form'</span> <span class="na">src=</span><span class="s">"../iframeform/"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
   </code></pre></div>
   <blockquote class="pass">
   <p>Correct <code>title</code> is provided. This would also pass if this information was in a <code>name</code> attribute.</p>
@@ -1511,6 +1485,25 @@
   <blockquote class="fail">
   <p>This <code>name</code> isn't correct</p>
   </blockquote>
+
+  <h3>Maps</h3>
+
+  <p>An embedded Google Map alone is not screen reader accessible, but the driving and walking instructions are. To maximize the effectiveness of Google Maps:
+  <ol>
+    <li>Include a street address and zip code to enable Google Map search.</li>
+    <li>Include basic text-based directions.</li>
+    <li>A Google Map is typically embedded within an <code>iframe</code>. Make sure the <code>iframe</code> includes a <code>title</code> attribute.</li>
+  </ol>  
+  <h4 class="pass-fail">Passes</h4>
+
+  <iframe title="Google Map with a marker on San Francisco City Hall" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4560778237455!2d-122.42094568445866!3d37.77935011966885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580997aeae663%3A0xb2706dff83574f4a!2sCity+Hall!5e0!3m2!1sen!2sus!4v1471452296763" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">title=</span><span class="s">'Google Map with a pin dropped on San Francisco City Hall'</span> <span class="na">src=</span><span class="s">"https://maps.google.com/..."</span> <span class="na">width=</span><span class="s">"600"</span> <span class="na">height=</span><span class="s">"450"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">style=</span><span class="s">"border:0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  </code></pre></div>
+  <blockquote class="pass">
+  <p>Map provided with specific location so directions may be obtained and <code>title</code> is given with enough context to inform the user.</p>
+  </blockquote>
+  
+
   </div>
 </section>
 <!-- Frames end -->
