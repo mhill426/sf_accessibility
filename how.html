@@ -27,7 +27,7 @@
         <p>An official website of the City & County of San Francisco</p>
       </div>
       <div class="col-xs-4">
-        <p class="pull-right">This site is in beta and a work in progress</p>
+        <p class="pull-right">This site is in <strong>Alpha</strong> and a work in progress</p>
       </div>
     </div> 
   </div>
@@ -618,7 +618,7 @@
   <p><label for="lname" style="color:red">* Last Name&nbsp;</label><input type"text"="" id="lname"></p>
 
   <blockquote class="pass">
-  <p>This example passes because the * and the red text indicates the required field.</p>
+  <p>This example passes because the * and the red text indicates the required field. Although it is preferred to require all fields and label the optional ones with <code>placeholders</code></p>
   </blockquote>
 
   </div>
@@ -848,7 +848,7 @@
 
   <h5>Simple Table</h5>
 
-  <table>
+  <table class="table table-bordered">
     <caption>User's Height and Weight</caption>
     <tbody><tr>
       <th scope="col">
@@ -911,7 +911,7 @@
 
   <h5>Complex table</h5>
 
-  <table>
+  <table class="table table-bordered">
     <caption>User's Height and Weight</caption>
     <tbody><tr>
       <th rowspan="2" id="name">
@@ -1496,11 +1496,11 @@
   </ol>  
   <h4 class="pass-fail">Passes</h4>
 
-  <iframe title="Google Map with a marker on San Francisco City Hall" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4560778237455!2d-122.42094568445866!3d37.77935011966885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580997aeae663%3A0xb2706dff83574f4a!2sCity+Hall!5e0!3m2!1sen!2sus!4v1471452296763" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">title=</span><span class="s">'Google Map with a pin dropped on San Francisco City Hall'</span> <span class="na">src=</span><span class="s">"https://maps.google.com/..."</span> <span class="na">width=</span><span class="s">"600"</span> <span class="na">height=</span><span class="s">"450"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">style=</span><span class="s">"border:0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+  <iframe title="Google Map with a marker on San Francisco City Hall" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4560778237455!2d-122.42094568445866!3d37.77935011966885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580997aeae663%3A0xb2706dff83574f4a!2sCity+Hall!5e0!3m2!1sen!2sus!4v1471452296763" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe><br/>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;iframe</span> <span class="na">title=</span><span class="s">'Google Map with a pin dropped on San Francisco City Hall'</span> <span class="na">src=</span><span class="s">"https://maps.google.com/..."</span> <span class="na">width=</span><span class="s">"400"</span> <span class="na">height=</span><span class="s">"350"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">style=</span><span class="s">"border:0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
   </code></pre></div>
   <blockquote class="pass">
-  <p>Map provided with specific location so directions may be obtained and <code>title</code> is given with enough context to inform the user.</p>
+  <p>Map is provided with specific location so link to directions is available and <code>title</code> is given with enough context to inform the user.</p>
   </blockquote>
   
 
