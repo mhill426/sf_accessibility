@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>San Francisco - Accessibility Guide - How</title>
+    <title>How - San Francisco Accessibility Guide</title>
     <meta name="description" content="Why web accessibility matters">
     <meta name="keywords" content="san francisco, city, sf, sfgov, web, accessibility, disabilities, inclusive, design, development, guide, educational, training, checklist, guidelines, user, experience, human-centered" />
     <meta property="og:image" content="http://digitalservices.sfgov.org/assets/SFDS_Logo.png">
@@ -116,12 +116,11 @@
           <img class="category-icon col-xs-5 col-sm-3 col-md-3" src="assets/icons/how2-icon.svg" alt="">  
           <div class="category-title col-xs-10 col-sm-9 col-md-9">
             <h1>How to implement</h1>
-            <h4>Designing and building for accessibility ensures you the ability to reach all your users.</h4>
+            <h4>Moving past just the technical details and focusing on the interaction and experience.</h4>
           </div>
           <div class="category-overview col-xs-12">
-            <p>As a city we are required by law to meet the accessibility guidelines set forth by the Americans with Disabilities Act and Section 508 of the Rehabilitation Act.  But for too long our approch has been one of compliance, designed around certain best practices; but, best practices perpetuate a conflicting “one size fits all” model that’s rarely rooted in any actual insight (much less insight that is relevant to your product) propelling products toward a state of mediocrity.</p>
-            <p>We have choosen to completely revamp our guidelines and impliment an educational approach throughout our product teams. From project managers to content strategist and designers to developers, we all learn why this matters and how to implement, holding each other accountable in the process.  We have actually brought an idealogy of empathy into our entire design and development process. Focused on research, testing, and feedback of ALL our users.</p>
-            <p>First we need to educate ourselves in how people with disabilities interact through their numerous different devices. What are the limitations and advantages of each device?</p>
+            <p>Accessibility has improved, or at least impacted all of our lives in some fashion. Email, Text Messaging, Dictation, or Captions are all derived from solutions originally created for people with disabilities. By focusing on the experience of all our users, we create a better experience for everyone.</p>
+            <p>The following checklist and examples are meant as just a starting point for us to learn what to look for and how to ensure our code allows for full functionality and usability. But remember, technically compatible doesn't necessarily make a good experience. Always ask the question: "Can we make this experience better?".</p>
           </div>    
       </div>
     </header>
@@ -132,10 +131,10 @@
   <h2>Checklist</h2>
   <p>This checklist helps us identify potential accessibility issues affecting our websites or applications. It's broken down into three sections of decreasing importance: A, B and C. Please check and address these issues in the order in which they appear.</p>
 
-  <p>For more detail on accessibilty standards, please see <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG2.0 AA</a> </p>
+  <p>For more detail on accessibility standards, please see <a href="https://www.w3.org/TR/WCAG20/" target="_blank">WCAG2.0 AA</a> </p>
 
   <ul>
-  <li>A - Critical issues that will cause serious problems and/or stop most users of assitive technology from using the site</li>
+  <li>A - Critical issues that will cause serious problems and/or stop most users of assistive technology from using the site</li>
   <li>B - Issues that may cause problems or increased frustration for certain users</li>
   <li>C - Minor issues that will cause problems or frustration for a small number of users</li>
   </ul>
@@ -278,7 +277,7 @@
 
   <ul>
   <li>Ensure the focus is moved to the revealed content.</li>
-  <li>If this does not happen, check for a programatic description of the change.</li>
+  <li>If this does not happen, check for a programmatic description of the change.</li>
   </ul></li>
   <li>Check for title tags providing information not on the screen.
 
@@ -288,7 +287,7 @@
   <li>Check that the focus never goes to elements that won't be available to somebody using a mouse.
 
   <ul>
-  <li><strong>If the keyboard focus goes to an offscreen element that has been temporarily hidden (items in a non-expanded drop-down menu, offscreen modals which haven't been triggered, etc.), this is a failure</strong>.</li>
+  <li><strong>If the keyboard focus goes to an off-screen element that has been temporarily hidden (items in a non-expanded drop-down menu, off-screen modals which haven't been triggered, etc.), this is a failure</strong>.</li>
   </ul></li>
   </ol>
 
@@ -313,7 +312,7 @@
   <span class="nt">&lt;/div&gt;</span>
   </code></pre></div>
   <blockquote class="ok">
-  <p>Avoid using tabindex of &gt;= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when autofocusing an element not normally interactive.</p>
+  <p>Avoid using tabindex of &gt;= 1 as this will disrupt the normal tab order of the page. tabindex of -1 is only appropriate when auto-focusing an element not normally interactive.</p>
   </blockquote>
 
   <h4>Keyboard Trap</h4>
@@ -385,7 +384,7 @@
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span> <span class="na">title=</span><span class="s">"Sign that reads No smoking in this area"</span><span class="nt">&gt;</span>
   </code></pre></div>
   <blockquote class="ok">
-  <p>Acceptable, but less compatible with certain Assitive technologies
+  <p>Acceptable, but less compatible with certain Assistive technologies
   Clear title tag with all text included.</p>
   </blockquote>
 
@@ -472,7 +471,7 @@
 
   <ol>
   <li>Identify sections which use color to convey information</li>
-  <li>Check to see if the information is conveyed in another way visually and programatically</li>
+  <li>Check to see if the information is conveyed in another way visually and programmatically</li>
   </ol>
 
   <h3>Examples</h3>
@@ -543,7 +542,7 @@
   <li>Find all instructions associated with each element
 
   <ul>
-  <li><strong>If a form element isn't programatically associated with ALL instructions, this is a failure</strong></li>
+  <li><strong>If a form element isn't programmatically associated with ALL instructions, this is a failure</strong></li>
   </ul></li>
   <li>Ensure all field elements are accessible via the keyboard
 
@@ -638,13 +637,13 @@
   <p><strong><em>Failure:</em></strong> The <code>title</code> tag for Pea Soup indicates it's 'Chick Pea Soup.' This information is not available to keyboard, sighted users.</p>
   </blockquote>
 
-  <h4>How ARIA afects form inputs</h4>
+  <h4>How ARIA affects form inputs</h4>
 
   <p>Screen readers vary on what they read and the additional information they provide by default. This is a broad summary of what is read based on VoiceOver for Mac OSX.</p>
 
   <p>You can test these with your own screen reader. If you have a OSX you can turn voice over on by hitting command+f5.</p>
 
-  <p><strong>TL;DR</strong> Using <code>aria-label</code> or <code>aria-labeledby</code> will cause a screen reader to only read them and not the default label. If you want an input to read from multiple things like an error message, use <code>aria-labeledby</code> and pass it the <code>for</code> attribute of the label and any aditional <code>id</code>s you want read. ex. <code>aria-labeledby='car1 car_description car-error-message'</code></p>
+  <p><strong>TL;DR</strong> Using <code>aria-label</code> or <code>aria-labeledby</code> will cause a screen reader to only read them and not the default label. If you want an input to read from multiple things like an error message, use <code>aria-labeledby</code> and pass it the <code>for</code> attribute of the label and any additional <code>id</code>s you want read. ex. <code>aria-labeledby='car1 car_description car-error-message'</code></p>
 
   <h5>No ARIA</h5>
 
@@ -704,7 +703,7 @@
 
   <h5>With aria-describedby pointing at <code>carmakedescription</code></h5>
 
-  <p>Voiceover only reads the label, Jaws should read the description as well</p>
+  <p>Voice-over only reads the label, Jaws should read the description as well</p>
 
   <p><label for="car_5">Car</label>
   <input type="text" id="car_5" aria-describedby="carmakedescription_5"><br>
@@ -725,13 +724,13 @@
   <div class="col-md-9">
 
   <h2>Tables</h2>
-  <p>When tables are used to show data, the header cells that relate to the data cells need to be programatically linked. This makes table navigation for screen readers less painful. </p>
+  <p>When tables are used to show data, the header cells that relate to the data cells need to be programmatically linked. This makes table navigation for screen readers less painful. </p>
 
   <p>Simple tables can have 2 levels of headers. Each header cell should have <code>scope='col'</code> or <code>scope='row'</code>. </p>
 
   <p>Complex tables are tables with more than 2 levels of headers. Each header should be given a unique <code>id</code> and each data cell should have a <code>headers</code> attribute with each related header cells id listed.</p>
 
-  <p>If a table has text associated with it, ensure the text is programatically linked to the table. This is ususally with a <code>&lt;caption&gt;</code> element. This element should be the first element under the <code>&lt;table&gt;</code> element. While a <code>caption</code> is not required, it can be very helpful to screen reader users navigating the page. A <code>caption</code> element is <strong>strongly</strong> encouraged on data tables as it gives context to the data. </p>
+  <p>If a table has text associated with it, ensure the text is programmatically linked to the table. This is usually with a <code>&lt;caption&gt;</code> element. This element should be the first element under the <code>&lt;table&gt;</code> element. While a <code>caption</code> is not required, it can be very helpful to screen reader users navigating the page. A <code>caption</code> element is <strong>strongly</strong> encouraged on data tables as it gives context to the data. </p>
 
   <h3>Testing</h3>
 
@@ -810,7 +809,7 @@
   <span class="nt">&lt;/table&gt;</span>
   </code></pre></div>
   <blockquote class="pass">
-  <p>Looking at this table, the column headers all relate to the cells below. This is done programatically with <code>scope="col"</code>. Each height and age value is related to the person and this is done programatically with <code>scope="row"</code>.</p>
+  <p>Looking at this table, the column headers all relate to the cells below. This is done programmatically with <code>scope="col"</code>. Each height and age value is related to the person and this is done programmatically with <code>scope="row"</code>.</p>
   </blockquote>
 
   <h5>Complex table</h5>
@@ -933,7 +932,7 @@
   <ol>
   <li>Identify links that open in new windows</li>
   <li>Check that <code>target='_blank'</code></li>
-  <li>Verify that some indication is given programatically
+  <li>Verify that some indication is given programmatically
 
   <ul>
   <li> <code>&lt;a href='#' target='_blank' aria-label='Opens in new window&gt;</code></li>
@@ -945,7 +944,7 @@
   <h4>Skip Navigation</h4>
 
   <ol>
-  <li>First compare the pages on the site for links that are repeated at the beggining of the tab order
+  <li>First compare the pages on the site for links that are repeated at the beginning of the tab order
 
   <ul>
   <li><code>Skip Navigation</code> is not needed if repetitive nav links are not used</li>
@@ -955,7 +954,7 @@
 
   <ul>
   <li>Verify the target is a valid id</li>
-  <li>Verify the target is after the repetive content and before meaningful content</li>
+  <li>Verify the target is after the repetitive content and before meaningful content</li>
   <li>Verify the target has a <code>tabindex='-1'</code> or is included in the tab order (such as a link or a button)</li>
   <li>This ensures the element will receive focus in chrome and safari</li>
   </ul></li>
@@ -1013,7 +1012,7 @@
    <span class="p">}</span>
   </code></pre></div>
   <blockquote class="pass">
-  <p>This is how the 'Skip Navigation' was achieved for the accessiblity site, feel free to use for your own site. </p>
+  <p>This is how the 'Skip Navigation' was achieved for the accessibility site, feel free to use for your own site. </p>
   </blockquote>
   
   </div>
@@ -1052,7 +1051,7 @@
   <span class="nt">&lt;/marquee&gt;</span>
   </code></pre></div>
   <blockquote class="pass">
-  <p>This is an example of marquee. The scrolldelay is set and it is equal to 400 meaning it is compliant. </p>
+  <p>This is an example of marquee. The <code>scrolldelay</code> is set and it is equal to 400 meaning it is compliant. </p>
   </blockquote>
 
   <h4 class="pass-fail">Fails</h4>
@@ -1087,10 +1086,10 @@
   </ol>
 
   <h3>Examples</h3>
-  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;title&gt;</span>Page Titles - 18F Accessibility<span class="nt">&lt;/title&gt;</span>
+  <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;title&gt;</span>How - San Francisco Accessibility Guide<span class="nt">&lt;/title&gt;</span>
   </code></pre></div>
   <blockquote class="pass">
-  <p>The title for this page is 'Page Titles - 18F Accessibility'. The first half is the name of this page and the second is the name of the site.  </p>
+  <p>The title for this page is 'How - San Francisco Accessibility Guide'. The first half is the name of this page and the second is the name of the site.  </p>
   </blockquote>
 
   </div>  
@@ -1253,15 +1252,19 @@
 
   <h3>Closed Captioning</h3>
 
-  <p>Videos with audio require synchornized closed captioning. Anything said in the video must be included in the closed captioning, and anything in the closed captioning must be said in the video. </p>
+  <p>Videos with audio require synchronized closed captioning. Anything said in the video must be included in the closed captioning, and anything in the closed captioning must be said in the video. </p>
 
-  <h3>Audio Description</h3>
+  <h3>Transcripts</h3>
 
-  <p>Audio description ensures any information displayed visually is conveyed via audio. The most basic example of this is text on screen. All the text on screen should be availble by audio. This can be done a couple of ways. The script for the video can be written in a way that all visual information is read by the narrator. The other way is to add a seperate audio track that describes the visual content. This can be done with a special player or a seperate version of the video with the audio baked in. </p>
+  <p>Transcripts can be beneficial as users are able to read and search them must faster. Anything said in the video or audio must be included in the transcript, and anything in the transcript must be said in the video or audio. </p>
+
+<h3>Audio Description</h3>
+
+  <p>Audio description ensures any information displayed visually is conveyed via audio. The most basic example of this is text on screen. All the text on screen should be available by audio. This can be done a couple of ways. The script for the video can be written in a way that all visual information is read by the narrator. The other way is to add a separate audio track that describes the visual content. This can be done with a special player or a separate version of the video with the audio baked in. </p>
 
   <h3>Keyboard Access</h3>
 
-  <p>Just a note about keyboard access. All video controls should be accessible via the keyboard, but its also worth noting the time stamp information should be availble to screen readers aswell. </p>
+  <p>Just a note about keyboard access. All video controls should be accessible via the keyboard, but its also worth noting the time stamp information should be available to screen readers as well. </p>
   </div>
 </section>
 <!-- Multimedia end -->
@@ -1293,7 +1296,7 @@
 <section id="text" class="container section-content">
   <div class="col-md-9">
   <h2>Web Text Properties</h2>
-  <p>Having the HTML properties of your website set properly ensures assitive technology interacts with your site correctly. <em>AT</em> will read foreign languages, but they need to know when the language differs from the page's default. </p>
+  <p>Having the HTML properties of your website set properly ensures assistive technology interacts with your site correctly. <em>AT</em> will read foreign languages, but they need to know when the language differs from the page's default. </p>
 
   <h3>Testing</h3>
 
@@ -1307,7 +1310,7 @@
   <li>Identify any content that differs from the default language, make sure the content has its own <code>lang</code> attribute set with that language
 
   <ul>
-  <li><strong>Any alternate language content not set constitues a failure</strong></li>
+  <li><strong>Any alternate language content not set constitutes a failure</strong></li>
   </ul></li>
   </ol>
 
@@ -1332,7 +1335,7 @@
 <section id="CSS" class="container section-content">
   <div class="col-md-9">
   <h2>CSS Dependence</h2>
-  <p>CSS Dependence just means site shouldn't rely on CSS to be functional or understandable. Often sites will use CSS to load important images for example. This is bad for several reasons. Background images can't be tagged for accessiblity and with CSS turned off they aren't shown. </p>
+  <p>CSS Dependence just means site shouldn't rely on CSS to be functional or understandable. Often sites will use CSS to load important images for example. This is bad for several reasons. Background images can't be tagged for accessibility and with CSS turned off they aren't shown. </p>
 
   <p>The other issue that pops up with CSS dependence is content order. Sometimes, content will be arranged on screen with CSS instead of the natural code flow. </p>
 
@@ -1415,9 +1418,9 @@
 <section id="plugins" class="container section-content">
   <div class="col-md-9">
   <h2>Plug-ins</h2>
-  <p>Plugins provide extended functionality not native to the browswer. Examples include PDF, Flash, Shockwave, Silverlight, and Java. </p>
+  <p>Plugins provide extended functionality not native to the browser. Examples include PDF, Flash, Shockwave, Silverlight, and Java. </p>
 
-  <p>Anytime a plugin is used on a page, they must be tested for accessiblity. </p>
+  <p>Anytime a plugin is used on a page, they must be tested for accessibility. </p>
 
   <p>Pro-tip: Flash always fails for accessibility, but is often given an exception. </p>
 
@@ -1433,7 +1436,7 @@
   <li>Check each plugin for accessibility
 
   <ul>
-  <li>Most plugins have a VPAT availble on the manufactures website which lists its accessilbity findings</li>
+  <li>Most plugins have a VPAT available on the manufactures website which lists its accessibility findings</li>
   </ul></li>
   </ol>
   </div>
@@ -1474,6 +1477,29 @@ $(function() {
         }
     });
 });
+
+$(document).ready(function(){
+  var blinking = false,
+    interval,
+    $blink = $('.blink');
+  $('#blinkbutton').click(function(){
+    if (!blinking){
+      $('#blinkbutton').html('Click to stop blinking');
+      interval = setInterval(function(){
+        $blink.toggle();
+      },200);
+      blinking = true;
+    }
+    else
+    {
+      clearInterval(interval);
+      $('#blinkbutton').html('Click to see non-compliant flashing');
+      $blink.hide();
+      blinking = false;
+    }
+  });
+});
+
 </script>
 
 </body>
