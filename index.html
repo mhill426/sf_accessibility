@@ -27,7 +27,7 @@
         <p>An official website of the City & County of San Francisco</p>
       </div>
       <div class="col-xs-4">
-        <p class="pull-right">This site is in <strong>Alpha</strong> and a work in progress</p>
+        <p class="pull-right">This site is in <a href="https://github.com/mhill426/sf_accessibility" target="_blank" style="color:#eee;"><strong>Alpha</strong></a> and a work in progress</p>
       </div>
     </div> 
   </div>
@@ -120,7 +120,7 @@
       <div class="container">
         <div class="intro-body col-xs-12 col-md-8">
           <p>This is a guide on how to think, design, build, and test digital products with all of our users in mind. Though it was originally created for San Francisco, City & County departments and vendors, we realized it has the opportunity to bring awareness to an issue throughout the tech industry in which an a group of <s>users</s> people are not included in the process of designing, developing, or testing.</p>
-          <p>We believe our diversity as a team and open-mindedness allows us to come together to debate, think, and ultimately create better, more inclusive experiences. That is why we have open sourced this project and ask for your feedback and help in this on-going process to educate ourselves and remove barriers.</p>
+          <p>We believe our diversity as a team and open-mindedness allows us to come together to debate, think, and ultimately create better, more inclusive experiences. That is why we have <a href="https://github.com/mhill426/sf_accessibility" target="_blank">open sourced</a> this project and ask for your feedback and help in this on-going process to educate ourselves and remove barriers.</p>
         </div>
         <div class="col-md-4">
         <a class="btn-custom2 pull-right" href="why.html">Learn why this matters</a>
@@ -135,14 +135,14 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-10 col-lg-offset-1 text-center">
-                 <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+                 <h6 class="credit"><a href="https://github.com/mhill426/sf_accessibility" target="_blank">&copy; <span id="copy-year">2017</span> Made in San Francisco</a></h6>
               </div>
           </div>
       </div>
     </footer>
 <!-- JavaScript -->
 <script>
-
+//Scroll To
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -158,6 +158,14 @@
         }
       });
     });
+
+// Copyright Date
+$(function() {
+  var today = new Date()
+  var year = today.getFullYear()
+  $('#copy-year').html(year);
+});
+
 </script>
 
 </body>

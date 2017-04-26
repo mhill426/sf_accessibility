@@ -27,7 +27,7 @@
         <p>An official website of the City & County of San Francisco</p>
       </div>
       <div class="col-xs-4">
-        <p class="pull-right">This site is in <strong>Alpha</strong> and a work in progress</p>
+        <p class="pull-right">This site is in <a href="https://github.com/mhill426/sf_accessibility" target="_blank" style="color:#eee;"><strong>Alpha</strong></a> and a work in progress</p>
       </div>
     </div> 
   </div>
@@ -370,7 +370,7 @@
 
   <p><img style="width:170px;" src="assets/examples/no-smoke-sign.jpg" alt="Sign that reads No smoking in this area"></p>
   
-  <h4 class="pass-fail">Correct</h4>
+  <h4 class="pass-fail">Passes</h4>
   
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/accessibility/images/sign.jpg"</span> <span class="na">alt=</span><span class="s">"Sign that reads No smoking in this area"</span><span class="nt">&gt;</span>
   </code></pre></div>
@@ -402,7 +402,7 @@
 
   <hr>
 
-  <h4 class="pass-fail">Incorrect</h4>
+  <h4 class="pass-fail">Fails</h4>
 
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/examples/sign.jpg"</span><span class="nt">&gt;</span>
   </code></pre></div>
@@ -441,6 +441,7 @@
   Enter a valid email address
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
   
+  <h4 class="pass-fail">Passes</h4>
   <blockquote class="pass">
   <p>An icon used in an alert to convey that it's an error message, with additional <code>.sr-only</code> text to convey this hint to users of assistive technologies.</p>
   </blockquote>
@@ -1023,8 +1024,9 @@
 <section id="motion" class="container section-content">
 <div class="col-md-9">
   
-  <h2>Flashing</h2>
-  <p>Flashing is generally a bad idea. It can cause all sorts of issues, from seizures to motion sickness. If you absolutely must have a flashing element there are a few things to consider. </p>
+  <h2>Animations and Motion</h2>
+  <p>Adding animations and movement to a site or application is becoming more and more popular. It can be used to call attention to a particular section, give the interface depth with page transitions and slideouts, or maybe you have a beautiful video playing in the background. Just be careful not to over do it, and you may want to add some user control to those effects.</p>
+  <p>Flashing however is generally a bad idea. It can cause all sorts of issues, from seizures to motion sickness. If you absolutely must have a flashing element there are a few things to consider. </p>
 
   <h3>Testing</h3>
 
@@ -1152,24 +1154,24 @@
   <h4 class="pass-fail">Fails</h4>
 
   <div>
-    <h3>Category</h3>
+    <h4>Category</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
-    <h2>Sub Category 1</h2>
+    <h3>Sub Category 1</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
-    <h5>Sub Category 2</h5>
+    <h6>Sub Category 2</h6>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.</p>
   </div>
   <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-    <span class="nt">&lt;h3&gt;</span>Category<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>Category<span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;h2&gt;</span>Sub Category 1<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Sub Category 1<span class="nt">&lt;/h3&gt;</span>
     <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.<span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;h5&gt;</span>Sub Category 2<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;h6&gt;</span>Sub Category 2<span class="nt">&lt;/h6&gt;</span>
     <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet auctor lectus. Curabitur non est nibh. Suspendisse vehicula fermentum quam. Donec lobortis diam a ligula faucibus mattis.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   </code></pre></div>
   <blockquote  class="fail">
-  <p>This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of <code>Category</code> or <code>Sub category 1</code></p>
+  <p>This section has several issues. The first sub category has a lower value than the main category. The second sub category has skipped a heading level which while is better, this can cause confusion as its not clear if this category is the sub category of <code>Category</code> or <code>Sub Category 1</code></p>
   </blockquote>
   
   </div>   
@@ -1457,11 +1459,12 @@
 
 <!-- FOOTER -->
     <footer class="col-xs-12">
-        <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+        <h6 class="credit"><a href="https://github.com/mhill426/sf_accessibility" target="_blank">&copy; <span id="copy-year">2017</span> Made in San Francisco</a></h6>
     </footer>
 
 <!-- JavaScript --> 
 <script>
+// Scroll To
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -1478,6 +1481,19 @@ $(function() {
     });
 });
 
+// Keyboard Trap
+$(document).ready(function(){
+  $('.moveFocus').on('focus',function(){
+    $('.keyboardTrap:first').focus();
+  });
+  $('.keyboardTrap').click(function(){
+    $('.moveFocus').each(function(){
+      $(this).remove();
+    });
+  });
+});
+
+// Flashing Text
 $(document).ready(function(){
   var blinking = false,
     interval,
@@ -1498,6 +1514,13 @@ $(document).ready(function(){
       blinking = false;
     }
   });
+});
+
+// Copyright Date
+$(function() {
+  var today = new Date()
+  var year = today.getFullYear()
+  $('#copy-year').html(year);
 });
 
 </script>

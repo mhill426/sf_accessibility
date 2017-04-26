@@ -27,7 +27,7 @@
         <p>An official website of the City & County of San Francisco</p>
       </div>
       <div class="col-xs-4">
-        <p class="pull-right">This site is in <strong>Alpha</strong> and a work in progress</p>
+        <p class="pull-right">This site is in <a href="https://github.com/mhill426/sf_accessibility" target="_blank" style="color:#fff;"><strong>Alpha</strong></a> and a work in progress</p>
       </div>
     </div> 
   </div>
@@ -246,10 +246,11 @@
 <!-- Standards End -->
 <!-- FOOTER -->
     <footer class="col-xs-12">
-        <h6 class="credit">&copy;2016 Made in San Francisco</h6>
+        <h6 class="credit"><a href="https://github.com/mhill426/sf_accessibility" target="_blank">&copy; <span id="copy-year">2017</span> Made in San Francisco</a></h6>
     </footer>
 <!-- JavaScript --> 
 <script>
+// Scroll To
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -264,6 +265,13 @@ $(function() {
             }
         }
     });
+});
+
+// Copyright Date
+$(function() {
+  var today = new Date()
+  var year = today.getFullYear()
+  $('#copy-year').html(year);
 });
 
 </script>
